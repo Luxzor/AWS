@@ -293,7 +293,7 @@ def alumno_foto_perfil(id):
             },
         )
 
-        url = f"https://{S3_BUCKET}.s3.{AWS_REGION}.amazonaws.com/{key}"
+        url = f"https://{S3_BUCKET}.s3.amazonaws.com/{key}"
         alumno.fotoPerfilUrl = url
         db.session.commit()
 
